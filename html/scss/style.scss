@@ -1,0 +1,15 @@
+// bootstrap 設定
+@import '../libs/bootstrap/scss/functions';
+@import './variable';
+@import '../libs/bootstrap/scss/variables';
+@import '../libs/bootstrap/scss/bootstrap';
+
+// 基礎設定
+@import './custom-mixins';
+@import './global';
+
+// 共用元件
+@import './part';
+@import './layout';
+
+@import './index';
