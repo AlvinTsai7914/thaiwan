@@ -89,12 +89,11 @@
 		.swiper-button-prev,
 		.swiper-button-next {
 			background: transparent;
-			width: 60px;
-			height: 100%;
+			width: 50px;
+			height: 135px;
 			line-height: 53px;
 			margin-top: 0;
 			text-align: center;
-			border-radius: 12px;
 			transition: all .3s ease;
 			position: absolute;
 			top: 0;
@@ -112,31 +111,31 @@
 		
 		.swiper-button-prev {
 			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
 			&::before {
 				content: "";
 				@include v-center;
-				left: 10px;
-				@include size(20px, 40px);
-				background: center / cover no-repeat url(../img/static/icon/arrow_prev_white.png)
+				left: 0px;
+				@include size(25px, 96px);
+				background: center / cover no-repeat url(../img/static/icon/arror-prev-gold.png)
 			}
 		}
 
 		.swiper-button-next {
 			right: 0;
+			background-color: rgba(0, 0, 0, 0.5);
 			&::before {
 				content: "";
 				@include v-center;
-				right: 10px;
-				@include size(20px, 40px);
-				background: center / cover no-repeat url(../img/static/icon/arrow_next_white.png)
+				right: 0px;
+				@include size(25px, 96px);
+				background: center / cover no-repeat url(../img/static/icon/arror-next-gold.png)
 			}
 		}
 		@include media-breakpoint-up(lg) {
 			.swiper-button-prev,
 			.swiper-button-next {
 				opacity: 0;
-				width: 100px;
-				height: 100px;
 				margin-top: -30px;
 				visibility: hidden;
 			}
@@ -147,7 +146,7 @@
 				&::before {
 					left: auto;
 					@include center;
-					@include size(40px, 80px);
+					@include size(31px, 85px);
 				}
 			}
 			.swiper-button-next {
@@ -157,7 +156,7 @@
 				&::before {
 					left: auto;
 					@include center;
-					@include size(40px, 80px);
+					@include size(31px, 85px);
 				}
 			}
 		
@@ -201,7 +200,12 @@
 		}
 
 		.swiper-pagination {
-			text-align: left;
+			text-align: center;
+			.swiper-pagination-bullet {
+				&.swiper-pagination-bullet-active {
+					background: $secondary;
+				}
+			}
 		}
 
 		.swiper-container-horizontal>.swiper-pagination-bullets {
@@ -718,10 +722,34 @@
 						border: 1px solid $secondary;
 						background-color: $primary;
 						color: $secondary;
+						transition: background-color 0.3s ease;
 						&:hover {
 							background-color: #047a53;
 						}
 					}
+					.content_box > * {
+						opacity: 0;
+						transition: 0.4s ease;
+						transform: none;
+						transform: translateY(50px);
+					}
+				}
+				.swiper-slide.swiper-slide-active {
+					.product__text_card .content_box {
+						>* {
+							opacity: 1;
+							transition: 0.3s ease;
+							transform: translateY(0);
+							transition: all .5s;
+			
+							@for $i from 0 to 15 {
+								&:nth-child(#{$i + 1}) {
+									transition-delay: $i * 0.3 + 0.3s;
+								}
+							}
+						}
+					}
+			
 				}
 				@include media-breakpoint-down(xl) {
 					padding-top: 40px;

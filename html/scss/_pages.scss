@@ -1,0 +1,282 @@
+.wrapper.pg {
+    padding-top: 160px;
+    @include media-breakpoint-down(lg) {
+        padding-top: 140px;
+    }
+    @include media-breakpoint-down(md) {
+        padding-top: 140px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 100px;
+    }
+    main {
+        padding-top: 80px;
+        @include media-breakpoint-down(xl) {
+            padding-top: 60px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+        }
+    }
+
+    .pg_title {
+        margin-bottom: 48px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 34px;
+        }
+        @include media-breakpoint-down(sm) {
+            // margin-bottom: 0px;
+        }
+    }
+
+    // 最新消息列表
+    &.news_list {
+        background-color: #EDEDED;
+        .row {
+            margin-bottom: 44px;
+        }
+        .pgs_list {
+            margin-bottom: 72px;
+        }
+    }
+
+    // 最新消息內頁
+    &.news_detail {
+        background-color: #EDEDED;
+        padding-top: 0;
+        main {
+            padding-top: 0;
+        }
+        .container {
+            max-width: 1034px;
+            min-height: 100vh;
+            padding-top: 160px;
+            background-color: white;
+            @include media-breakpoint-down(xl) {
+                padding-top: 140px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-top: 100px;
+            }
+  
+        }
+        .inner_container {
+            padding: 50px 160px 0 100px;
+            @include media-breakpoint-down(xl) {
+                padding: 50px 120px 0 80px;  
+            }
+            @include media-breakpoint-down(lg) {
+                padding: 50px 80px 0 40px; 
+            }
+            @include media-breakpoint-down(md) {
+                padding: 50px 40px 0 0; 
+            }
+            @include media-breakpoint-down(sm) {
+                padding: 50px 15px 0; 
+            }
+        }
+        .detail_head {
+            .pg_detail_title {
+
+            }
+    
+            .pg_info {
+                .catagory {
+                    
+                }
+            }
+        }
+        .detail_body {
+            margin: 0 -12px;
+            display: flex;
+            flex-wrap: nowrap;
+            .editor_wrapper {
+                height: 100vh;
+                flex-grow: 1;
+                width: auto;
+                padding: 0 12px;
+            }
+            .sticky_wrapper {
+                padding: 0 12px;
+            }
+            .sticky_btn {
+           
+                // position: sticky;
+                // top: 240px;
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid red;
+                }
+            }
+        }
+    }
+
+    // 產品列表
+    &.product_list {
+        background: center / cover no-repeat url(../img/static/bg/product-bg.png);
+        .pg_tab_list {
+            li {
+                &:not(:first-child) {
+                    border-left: 1px solid white;
+                }
+                a {
+                    color: white;
+                    &.active {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+        .row {
+            padding: 0 130px;
+            @include media-breakpoint-down(lg) {
+                padding: 0;
+            }
+        }
+        .product_card {
+            margin-bottom: 50px;
+        }
+        .pgs_list {
+            margin-bottom: 72px;
+            li.current a {
+                color: $secondary !important;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .row {
+                margin: 0 -9px 20px;
+            }
+            .col-6, .col-md-4 {
+                padding: 0 9px;
+            }
+            .product_card {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // 產品內頁
+    &.product_detail {
+ 
+    }
+
+    // 品牌列表
+    &.brand_list {
+        background: center / cover no-repeat url(../img/static/bg/brand-bg.png);
+        .row {
+            padding: 0 120px;
+        }
+        .brand_card {
+            margin-bottom: 40px;
+        }
+        .pgs_list {
+            margin-bottom: 72px;
+            li.current a {
+                color: $secondary !important;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            .row {
+                padding: 0;
+            }
+            .brand_card {
+                margin-bottom: 30px;
+           
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .container {
+                padding: 0 35px
+            }
+        }
+    }
+
+    // 搜尋結果
+    &.search_result {
+        background-color: #EDEDED;
+        
+        .pgs_list {
+            margin-bottom: 72px;
+        }
+
+        .container.product_list, .container.brand_list {
+            .row {
+                padding: 0 120px;
+            }
+            @include media-breakpoint-down(md) {
+                .row {
+                    padding: 0;
+                }
+            }
+        }
+
+        // 產品搜尋結果
+        .container.product_list {
+            .row {
+                margin-bottom: 20px;
+            }
+            .product_card {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                .row {
+                    margin: 0 -9px 20px;
+                }
+                .col-6, .col-md-4 {
+                    padding: 0 9px;
+                }
+                .product_card {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        // 品牌搜尋結果
+        .container.brand_list {
+            .brand_card {
+                margin-bottom: 40px;
+            }
+            @include media-breakpoint-down(md) {
+                .row {
+                    padding: 0;
+                }
+                .brand_card {
+                    margin-bottom: 30px;
+               
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                .container {
+                    padding: 0 35px
+                }
+            }
+        }
+
+        // 查無資料
+        .container.noresult {
+            width: 100%;
+            height: calc(100vh - 430px);
+            position: relative;
+            div {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                @include font-size(60px);
+                font-weight: 300;
+                color: $dark-secondary;
+                text-align: center;
+      
+            }
+            @include media-breakpoint-down(md) {
+                div {
+                    top: 30%;
+                }
+            }
+        }
+    }
+
+}

@@ -50,8 +50,9 @@ $(function() {
 // header
 $(function() {
     $(".hamburger").on("click", function(e) {
-            $("header").toggleClass("-open")
-            $(".overlay").toggleClass("-open")
+        $("header").toggleClass("-open")
+        $(".overlay").toggleClass("-open")
+        $(".burger").toggleClass("-open")
     })
 
     $(".overlay").on("click", () => {closeSubNav()})
@@ -75,9 +76,9 @@ $(function() {
             $header = $("header");
             closeSubNav()
         if ($scrollTop > 90) {
-            $header.addClass("-solid");
+            $header.addClass("-shrink");
         } else {
-            $header.removeClass("-solid");
+            $header.removeClass("-shrink");
         }
     }
     
