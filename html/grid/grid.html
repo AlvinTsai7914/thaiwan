@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="./css/page.css">
+  <!-- 前台 style -->
+  <!-- <link rel="stylesheet" href="./css/page-web.css"> -->
+
+  <style>
+    /* 本頁排版樣式設定，非模組樣式設定 */
+    h2 {
+      text-align: center;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #ff7da4;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 上傳影片用      video-wrap ckeditor-html5-video -->
+  <!-- Youtube 影片用  oembed-provider-youtube -->
+  <!-- control-btnGroup 是 後台編輯器才會出現，前台看不到 -->
+
+  <nav class="ckeditor navbar">
+    <a class="navbar-brand" href="http://xxx.com.tw/">
+      <img src="./logo.jpeg" alt="logo">
+    </a>
+  </nav>
+
+  <!-- 主標、副標、內容 -->
+  <!-- <h2>主標、副標、內容</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="title">主標、副標、內容的主標</div>
+        <div class="title-sub">主標、副標、內容的副標</div>
+        <p class="text">
+          主標、副標、內容的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左圖右文 -->
+  <!-- <h2>左圖右文</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">左圖右文的圖片說明文字</div>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左圖右文的主標</div>
+        <div class="title-sub">左圖右文的副標</div>
+        <p class="text">
+          左圖右文的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左文右圖 -->
+  <!-- <h2>左文右圖</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左文右圖的主標</div>
+        <div class="title-sub">左文右圖的副標</div>
+        <p class="text">
+          左文右圖的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+      <div class="col-md-6 col-12">
+        <img class="img-fluid" src="./1920x1080-2.png" alt="img" />
+        <div class="text-sub">左文右圖的圖片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中大圖[滿版] -->
+  <!-- <h2>置中大圖[滿版]</h2> -->
+  <div class="ckeditor container-fluid">
+    <div class="control-btnGroup">
+      <i class="fas fa-chevron-circle-up"></i>
+      <i class="fas fa-chevron-circle-down"></i>
+      <i class="fas fa-times-circle"></i>
+    </div>
+    <div class="row">
+      <img src="./1920x1080-1.png" class="img-fluid" alt="Fluid image">
+      <div class="text-sub">置中大圖[滿版]的圖片說明文字</div>
+    </div>
+  </div>
+
+  <!-- 置中大圖 -->
+  <!-- <h2>置中大圖</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <img class="img-fluid" src="./1920x1080-2.png" alt="img" />
+        <div class="text-sub">置中大圖的圖片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中兩圖 -->
+  <!-- <h2>置中兩圖</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中兩圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-6 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中兩圖的圖片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中三圖 -->
+  <!-- <h2>置中三圖</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-4 col-12">
+        <img class="img-fluid border" src="./1920x1080-2.png" alt="img" />
+        <div class="text-sub">置中三圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-4 col-12">
+        <img class="img-fluid border" src="./1920x1080-2.png" alt="img" />
+        <div class="text-sub">置中三圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-4 col-12">
+        <img class="img-fluid border" src="./1920x1080-2.png" alt="img" />
+        <div class="text-sub">置中三圖的圖片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中四圖 -->
+  <!-- <h2>置中四圖</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-3 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中四圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-3 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中四圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-3 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中四圖的圖片說明文字</div>
+      </div>
+      <div class="col-md-3 col-12">
+        <img class="img-fluid" src="./1920x1080-1.png" alt="img" />
+        <div class="text-sub">置中四圖的圖片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左影右文[連結] -->
+  <!-- <h2>左影右文[連結]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="embed-responsive embed-responsive-16by9 oembed-provider-youtube">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="link video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">左影右文[連結]的影片說明文字</div>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左影右文[連結]的主標</div>
+        <div class="title-sub">左影右文[連結]的副標</div>
+        <p class="text">
+          左影右文[連結]的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左文右影[連結] -->
+  <!-- <h2>左文右影[連結]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左文右影[連結]的主標</div>
+        <div class="title-sub">左文右影[連結]的副標</div>
+        <p class="text">
+          左文右影[連結]的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="embed-responsive embed-responsive-16by9 oembed-provider-youtube">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="link video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">左文右影[連結]的影片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中影片[連結] -->
+  <!-- <h2>置中影片[連結]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="embed-responsive embed-responsive-16by9 oembed-provider-youtube">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="link video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">置中影片[連結]的影片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左影右文[video] -->
+  <!-- <h2>左影右文[video]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="embed-responsive embed-responsive-16by9 video-wrap ckeditor-html5-video">
+          <iframe class="embed-responsive-item" src="./kasser.mp4" title="video" allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">左影右文[video]的影片說明文字</div>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左影右文[video]的主標</div>
+        <div class="title-sub">左影右文[video]的副標</div>
+        <p class="text">
+          左影右文[video]的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左文右影[video] -->
+  <!-- <h2>左文右影[video]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-md-6 col-12 p-3">
+        <div class="title">左文右影[video]的主標</div>
+        <div class="title-sub">左文右影[video]的副標</div>
+        <p class="text">
+          左文右影[video]的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+        </p>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="embed-responsive embed-responsive-16by9 video-wrap ckeditor-html5-video">
+          <iframe class="embed-responsive-item" src="./kasser.mp4" title="video" allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">左文右影[video]的影片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中影片[video] -->
+  <!-- <h2>置中影片[video]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="embed-responsive embed-responsive-16by9 video-wrap ckeditor-html5-video">
+          <iframe class="embed-responsive-item" src="./kasserBig.mp4" title="video" allowfullscreen></iframe>
+        </div>
+        <div class="text-sub">置中影片[video]的影片說明文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分隔線 -->
+  <!-- <h2>分隔線</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <hr />
+      </div>
+    </div>
+  </div>
+
+  <!-- 表格[左標題右內容] -->
+  <!-- <h2>表格[左標題右內容]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="text-sub">表格[左標題右內容]的表格說明文字</div>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">表格標題</th>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <th scope="row">表格標題</th>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <th scope="row">表格標題</th>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <th scope="row">表格標題</th>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 表格[上標題下內容] -->
+  <!-- <h2>表格[上標題下內容]</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="text-sub">表格[上標題下內容]的表格說明文字</div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">表格標題</th>
+                <th scope="col">表格標題</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+              <tr>
+                <td>表格內容</td>
+                <td>表格內容</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 置中三圖 -->
+  <!-- 最多3組 最少1組 -->
+  <!-- <h2>置中三圖(圓)</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-center justify-content-md-around px-md-5">
+          <div class="col-8 col-sm-4 col-lg-3">
+            <div class="img-box-round mb-3 overflow-hidden">
+              <img src="./1400x1400.png" alt="" class="img-fluid">
+            </div>
+            <p class="title text-center">上圖下文(圓)主標</p>
+            <p class="text-center">上圖下文(圓)內文內文</p>
+          </div>
+          <div class="col-8 col-sm-4 col-lg-3">
+            <div class="img-box-round mb-3 overflow-hidden">
+              <img src="./1400x1400.png" alt="" class="img-fluid">
+            </div>
+            <p class="title text-center">上圖下文(圓)主標</p>
+            <p class="text-center">上圖下文(圓)內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。</p>
+          </div>
+          <div class="col-8 col-sm-4 col-lg-3">
+            <div class="img-box-round mb-3 overflow-hidden">
+              <img src="./1400x1400.png" alt="" class="img-fluid">
+            </div>
+            <p class="title text-center">上圖下文(圓)主標</p>
+            <p class="text-center">上圖下文(圓)內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 左圖右文(小圓) -->
+  <!-- <h2>左圖右文(小圓)</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-center mb-3">
+          <div class="col-4 col-sm-3 col-md-2 col-xl-1 pl-0">
+            <div class="img-box-round">
+              <img src="./1400x1400.png" alt="">
+            </div>
+          </div>
+          <div class="text-box col-8 col-sm-9 col-md-10 col-xl-11">
+            <p class="title m-0">左圖右文(小圓)主標</p>
+            <p class="mb-0">
+              左圖右文(小圓)內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-4 col-sm-3 col-md-2 col-xl-1 pl-0">
+            <div class="img-box-round">
+              <img src="./1400x1400.png" alt="">
+            </div>
+          </div>
+          <div class="text-box col-8 col-sm-9 col-md-10 col-xl-11">
+            <p class="title m-0">左圖右文(小圓)主標</p>
+            <p class="mb-0">
+              左圖右文(小圓)內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  連結圖片 -->
+  <!-- <h2>連結圖片</h2> -->
+  <div class="ckeditor container">
+    <div class="row">
+      <div class="col-12 control-btnGroup">
+        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-center">
+          <a href="#" class="col-10 col-sm-7 col-md-6 col-lg-4">
+            <img src="https://fakeimg.pl/350x130" alt="" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="ckeditor">© 2021 模組</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

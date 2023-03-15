@@ -47,7 +47,8 @@
         main {
             padding-top: 0;
         }
-        .container {
+
+        .container.custom {
             max-width: 1034px;
             min-height: 100vh;
             padding-top: 160px;
@@ -58,59 +59,108 @@
             @include media-breakpoint-down(sm) {
                 padding-top: 100px;
             }
-  
         }
+
         .inner_container {
-            padding: 50px 160px 0 100px;
+            padding: 50px 160px 0 160px;
             @include media-breakpoint-down(xl) {
-                padding: 50px 120px 0 80px;  
+                padding: 50px 120px 0 120px;  
             }
             @include media-breakpoint-down(lg) {
-                padding: 50px 80px 0 40px; 
+                padding: 50px 80px 0 80px; 
             }
             @include media-breakpoint-down(md) {
-                padding: 50px 40px 0 0; 
+                padding: 50px 40px 0 40px ; 
             }
             @include media-breakpoint-down(sm) {
-                padding: 50px 15px 0; 
+                padding: 50px 0px 0; 
             }
         }
+
         .detail_head {
             .pg_detail_title {
-
+                margin-bottom: 12px;
             }
     
             .pg_info {
+                display: flex;
+                margin-bottom: 20px;
                 .catagory {
+                    padding: 2px 12px;
+                    @include font-size(14px);
+                    color: $dark-secondary;
+                    border: 1px solid $dark-secondary;
+                }
+                .date {
+                    padding: 2px 12px;
+                    @include font-size(14px);
+                    color: $dark-secondary;
+                    svg {
+                        padding-right: 4px;
+                        @include font-size(14px);
+                        color: $dark-secondary;
+                    }
                     
                 }
             }
         }
+  
         .detail_body {
             margin: 0 -12px;
             display: flex;
             flex-wrap: nowrap;
             .editor_wrapper {
-                height: 100vh;
                 flex-grow: 1;
-                width: auto;
                 padding: 0 12px;
             }
             .sticky_wrapper {
                 padding: 0 12px;
+                min-width: 64px;
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
             }
-            .sticky_btn {
-           
-                // position: sticky;
-                // top: 240px;
-                a {
-                    display: block;
-                    width: 40px;
-                    height: 40px;
-                    border: 2px solid red;
+
+        }
+
+        .btn_wrapper {
+            a {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-bottom: 8px;
+                background-color: #C6C6C6;
+                color: white;
+                @include font-size(20px);
+                transition: all 0.2s linear;
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    background-color: $main-dark;
                 }
             }
         }
+
+        .detail_footer {
+            padding: 12px 0;
+            border-top: 1px solid $dark-secondary;
+            .btn_wrapper {
+                display: flex;
+                justify-content: end;
+                a {
+                    margin: 0 10px;
+                }
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+            }
+        }
+
     }
 
     // 產品列表

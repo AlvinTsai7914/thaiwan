@@ -22,10 +22,14 @@
     <!-- favicon -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"> -->
     <link rel="icon" type="image/x-icon" href="img/static/logo/favicon.ico" />
-    <!-- animate.css -->
-    <link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css" />
+
     <!-- swiper -->
     <link rel="stylesheet" type="text/css" href="libs/swiper/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" type="text/css" href="libs/aos/aos.css" />
+    <!-- ckeditor -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/page-web.css" />
     <!-- style.css -->
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
     <!-- fontawesome -->
@@ -103,35 +107,59 @@
         </div>
 
         <main>
-            <div class="container">
+            <div class="container custom">
                 <div class="inner_container">
                     <div class="detail_head">
                         <!-- 標題 類別 日期 -->
                         <h2 class="pg_detail_title">內容頁標題</h2>
                         <div class="pg_info">
                             <div class="catagory">
-
+                                食品與飲料
                             </div>
                             <div class="date">
-
+                                <i class="fa-solid fa-timer"></i>
+                                2023/02/06
                             </div>
                         </div>
                     </div>
                     <div class="detail_body">
                         <div class="editor_wrapper">
-                            
-                        </div>
-                        <div class="sticky_wrapper">
-                            <div class="sticky_btn">
-                                <a href="">fb</a>
-                                <a href="">fb</a>
-                                <a href="">fb</a>
-                                <a href="">fb</a>
+                            <!-- 主標、副標、內容 -->
+                            <!-- <h2>主標、副標、內容</h2> -->
+                            <div class="ckeditor container">
+                                <div class="row">
+                                <div class="col-12 control-btnGroup">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <i class="fas fa-chevron-circle-down"></i>
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="col-12">
+                                    <div class="title">主標、副標、內容的主標</div>
+                                    <div class="title-sub">主標、副標、內容的副標</div>
+                                    <p class="text">
+                                    主標、副標、內容的內容　內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容。
+                                    </p>
+                                </div>
+                                </div>
                             </div>
                         </div>
-                        
+                        <div class="sticky_wrapper">
+                            <div class="btn_wrapper">
+                                <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="line"><i class="fa-brands fa-line"></i></a>
+                                <a href="" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="link"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="detail_footer">
+                        <div class="btn_wrapper">
+                            <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="line"><i class="fa-brands fa-line"></i></a>
+                            <a href="" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="link"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -165,25 +193,39 @@
     <!-- isotope -->
 	<script src="libs/isotope/isotope-3.0.6.min.js"></script>
     <!-- sticky sidebar -->
+    <script src="libs/sticky-sidebar/resizeSensor.js"></script>
 	<script src="libs/sticky-sidebar/jquery.siicky-sidebar.min.js"></script>
     <!-- 共用js -->
     <script src="js/common.js"></script>
     <!-- 首頁js -->
     <script src="js/index.js"></script>
 
-    <!-- <script type="text/javascript">
-        var sidebar = new StickySidebar('.sticky_wrapper', {
-            topSpacing: 220,
-            bottomSpacing: 20,
-            containerSelector: '.detail_body',
-            innerWrapperSelector: '.sticky_btn'
-        });
-    </script> -->
     <script type="text/javascript">
-        $('.sticky_btn').stickySidebar({
-          topSpacing: 220,
-          bottomSpacing: 60
-        });
+            var stickySidebar = $('.sticky_btn').stickySidebar({
+                topSpacing: 180,
+                bottomSpacing: 60
+            });
+        $(function() {
+    
+            $(window).on("resize", function() {
+                stickySidebar.destroy();
+                if($(window).width() > 576) {
+                    stickySidebar = $('.sticky_btn').stickySidebar({
+                        topSpacing: 180,
+                        bottomSpacing: 60
+                    });
+                }
+                // if($(window).width() < 576) {
+                //     stickyBtn.destory()
+                // } else {
+                //     stickyBtn = $('.sticky_btn').stickySidebar({
+                //         topSpacing: 180,
+                //         bottomSpacing: 60
+                //     });
+                // }
+            })
+        })
+       
     </script>
 </body>
 

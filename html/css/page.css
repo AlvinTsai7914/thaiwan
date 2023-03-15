@@ -1,0 +1,663 @@
+@charset "UTF-8";
+.ckeditor {
+  /* 後台編輯器 控制按鈕 */
+  /* 主標題 */
+  /* 副標題 */
+  /* 內容 */
+  /* 圖片、影片的說明文字 */
+  /* 圖片上的文字 */
+  /* 人物姓名 */
+  /* 人物職稱 */
+  /* 人物介紹 */
+  /* 會員資料 */
+  /* 會員姓名 */
+  /* 會員職稱 */
+  /* 會員標籤 */
+}
+.ckeditor.navbar {
+  background-color: #1F3082;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ckeditor.navbar img {
+  height: 66px;
+}
+.ckeditor + footer {
+  background-color: #2354B5;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.ckeditor .control-btnGroup {
+  padding: 1rem 2.5rem;
+  text-align: right;
+}
+.ckeditor .control-btnGroup i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.ckeditor .control-btnGroup i:hover {
+  color: #d3060f;
+}
+.ckeditor .title {
+  font-weight: 700;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  color: #3F3F3F;
+}
+@media all and (max-width: 992px) {
+  .ckeditor .title {
+    font-size: 1.375rem;
+  }
+}
+.ckeditor .title-sub {
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  color: #3F3F3F;
+  font-weight: bold;
+}
+@media all and (max-width: 992px) {
+  .ckeditor .title-sub {
+    font-size: 1.125rem;
+  }
+}
+.ckeditor .text {
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #808080;
+}
+@media all and (max-width: 992px) {
+  .ckeditor .text {
+    font-size: 0.9375rem;
+  }
+}
+.ckeditor .text-sub {
+  margin: 1rem auto;
+  font-size: 1rem;
+  text-align: center;
+  color: #808080;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.ckeditor .text-sub.display-6 {
+  font-size: 1.5rem;
+}
+.ckeditor .text-under {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.ckeditor .img-fluid {
+  width: 100%;
+}
+.ckeditor .img-fluid.rounded-20 {
+  border-radius: 10px !important;
+}
+@media (min-width: 768px) {
+  .ckeditor .img-fluid.rounded-20 {
+    border-radius: 20px !important;
+  }
+}
+.ckeditor hr {
+  background-color: #A8257B;
+}
+.ckeditor .table {
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .ckeditor .table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.ckeditor .table thead th {
+  vertical-align: middle;
+}
+.ckeditor .table th, .ckeditor .table td {
+  text-align: center;
+  vertical-align: middle;
+  border: solid 4px #ffffff;
+  color: #3F3F3F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .ckeditor .table th, .ckeditor .table td {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.ckeditor .table th {
+  background-color: #ECEFF3;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #1F3082;
+}
+@media (max-width: 992px) {
+  .ckeditor .table th {
+    font-size: 1.125rem;
+  }
+}
+.ckeditor .table td {
+  background-color: white;
+  position: relative;
+  font-size: 1.125rem;
+}
+.ckeditor .table td::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #CCCCCC;
+}
+@media (max-width: 992px) {
+  .ckeditor .table td {
+    font-size: 1rem;
+  }
+}
+.table-model .ckeditor .table thead th {
+  background-color: #E6E6E6;
+}
+.table-model .ckeditor .table th, .table-model .ckeditor .table td {
+  text-align: center;
+}
+.table-model .ckeditor .table th:nth-child(2n), .table-model .ckeditor .table td:nth-child(2n) {
+  background-color: transparent;
+}
+.table-model .ckeditor .table td {
+  background-color: transparent;
+}
+.ckeditor .img-box-round {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.ckeditor .img-box-round img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.ckeditor .person-name {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(115, 51, 136, 0.4)), color-stop(21.35%, #733388), color-stop(78.13%, #733388), to(rgba(115, 51, 136, 0.4)));
+  background: linear-gradient(270deg, rgba(115, 51, 136, 0.4) 0%, #733388 21.35%, #733388 78.13%, rgba(115, 51, 136, 0.4) 100%);
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2.3;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.ckeditor .person-title {
+  color: #1F3082;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+.ckeditor .person-intro {
+  color: #3F3F3F;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.ckeditor .member-img {
+  max-width: 40%;
+}
+.ckeditor .member-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 10px;
+}
+.ckeditor .member-name {
+  color: #1F3082;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+.ckeditor .member-title {
+  color: #3F3F3F;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.ckeditor .member-intro {
+  color: #A8257B;
+  background-color: rgba(35, 84, 181, 0.5);
+  display: inline;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 2px 6px;
+  margin-top: auto;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+}
+.ckeditor .custom-table {
+  width: 100%;
+  margin: 0 auto !important;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+}
+.ckeditor .custom-table p {
+  padding: 5px 0px;
+  margin: 0;
+}
+.ckeditor .custom-table .col-md-4, .ckeditor .custom-table .col-md-3, .ckeditor .custom-table .col-md-8, .ckeditor .custom-table .col-md-9 {
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ckeditor .custom-table .col-md-4,
+.ckeditor .custom-table .col-md-3 {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #F8F5F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ckeditor .custom-table .col-md-8,
+.ckeditor .custom-table .col-md-9 {
+  background-color: #F6F6F6;
+}
+.ckeditor .custom-table .right .col-md-6 {
+  border-bottom: 4px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ckeditor .custom-table .right .col-md-6:nth-last-child(1), .ckeditor .custom-table .right .col-md-6:nth-last-child(2) {
+  border-bottom: 0px;
+}
+.ckeditor .custom-table .right .col-md-6:nth-child(2n-1) {
+  border-right: 4px solid white;
+}
+.ckeditor .custom-table .right .col-12:not(:last-child) {
+  border-bottom: 4px solid white;
+}
+@media all and (max-width: 768px) {
+  .ckeditor .custom-table p {
+    text-align: start;
+  }
+  .ckeditor .custom-table .col-md-4, .ckeditor .custom-table .col-md-3, .ckeditor .custom-table .col-md-8, .ckeditor .custom-table .col-md-9 {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .ckeditor .custom-table .right .col-md-6:nth-last-child(2) {
+    border-bottom: 4px solid white;
+  }
+  .ckeditor .custom-table .right .col-md-6:nth-child(2n-1) {
+    border-right: 0px solid white;
+  }
+}
+.ckeditor .text-bg-gray {
+  padding: 20px;
+}
+.ckeditor .text-bg-gray .bg-lightgray {
+  border-radius: 16px;
+  background-color: #F6F6F6;
+}
+.ckeditor .text-bg-gray .text-purple {
+  color: #5C1979;
+}
+.ckeditor .center_line {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media all and (max-width: 768px) {
+  .ckeditor .center_line {
+    display: none;
+  }
+}
+.ckeditor .custom-list-smecf {
+  padding-left: 12px;
+}
+.ckeditor .custom-list-smecf .list-item {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 12px;
+  position: relative;
+  list-style: none;
+}
+.ckeditor .custom-list-smecf .list-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 214, 0)), to(rgb(69, 199, 191)));
+  background: linear-gradient(to right, rgb(255, 214, 0) 0%, rgb(69, 199, 191) 100%);
+  position: absolute;
+  left: -12px;
+  top: 8px;
+  border-radius: 99999px;
+}
+.ckeditor .custom-list-smecf .list-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  word-break: keep-all;
+  min-width: 72px;
+  line-height: 1.8;
+}
+.ckeditor .custom-list-smecf .list-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.ckeditor .custom-list-smecf.en p {
+  display: inline-block;
+  width: auto;
+}
+.ckeditor .custom-list-smecf.en .list-item {
+  display: list-item;
+  margin-bottom: 12px;
+  position: relative;
+}
+.ckeditor .custom-list-smecf.en .list-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 214, 0)), to(rgb(69, 199, 191)));
+  background: linear-gradient(to right, rgb(255, 214, 0) 0%, rgb(69, 199, 191) 100%);
+  position: absolute;
+  left: -12px;
+  top: 8px;
+  border-radius: 99999px;
+}
+.ckeditor .dot-card {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.ckeditor .dot-card p.h4 {
+  position: relative;
+}
+.ckeditor .dot-card p.h4::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -11px;
+  width: 4px;
+  height: 16px;
+  background-color: #93C22E;
+  border-radius: 999px;
+}
+.ckeditor .contact-qrcode {
+  border-radius: 20px;
+  background-color: #F3F3F3;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ckeditor .contact-qrcode p {
+  margin: 10px 0;
+}
+.ckeditor .manufacturing_capabilities__card {
+  padding: 0 5px;
+}
+.ckeditor .manufacturing_capabilities__card .img_box {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.ckeditor .manufacturing_capabilities__card .img_box .holder {
+  padding-bottom: 100%;
+}
+.ckeditor .manufacturing_capabilities__card .img_box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+.ckeditor .manufacturing_capabilities__card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #153367;
+  text-align: center;
+}
+@media all and (max-width: 992px) {
+  .ckeditor .manufacturing_capabilities__card p {
+    font-size: 1.375rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .ckeditor .manufacturing_capabilities__card p {
+    font-size: 1.25rem;
+  }
+}
+.ckeditor img.border {
+  border: 1px solid #B3B3B3;
+}
+.ckeditor .diamond_icon_list {
+  width: 100%;
+  padding: 30px;
+  background-color: #ECEFF3;
+}
+.ckeditor .diamond_icon_list h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1F3082;
+  margin-bottom: 30px;
+}
+.ckeditor .diamond_icon_list ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.ckeditor .diamond_icon_list ul li {
+  margin-bottom: 16px;
+}
+.ckeditor .diamond_icon_list ul li p {
+  font-size: 1.375rem;
+  color: #1F3082;
+  display: inline;
+}
+.ckeditor .diamond_icon_list ul li::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin-right: 6px;
+  width: 9px;
+  height: 9px;
+  background-color: #1F3082;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media all and (max-width: 992px) {
+  .ckeditor .diamond_icon_list h3 {
+    font-size: 2.125rem;
+  }
+  .ckeditor .diamond_icon_list ul li p {
+    font-size: 1.25rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .ckeditor .diamond_icon_list ul li p {
+    font-size: 1.125rem;
+  }
+}
+.ckeditor .info_icon_list {
+  width: 100%;
+  padding: 30px;
+  background-color: #ECEFF3;
+}
+.ckeditor .info_icon_list h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1F3082;
+  margin-bottom: 30px;
+}
+.ckeditor .info_icon_list ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.ckeditor .info_icon_list ul li {
+  margin-bottom: 16px;
+}
+.ckeditor .info_icon_list ul li p {
+  font-size: 1.375rem;
+  color: #1F3082;
+  display: inline;
+}
+.ckeditor .info_icon_list ul li i {
+  position: relative;
+  bottom: 2px;
+  margin-right: 6px;
+}
+.ckeditor .info_icon_list ul li i:before {
+  color: #1F3082;
+}
+.ckeditor .info_icon_list a.contact_link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  margin: 0 0 0 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1F3082;
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ckeditor .info_icon_list a.contact_link:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #1F3082;
+}
+@media all and (max-width: 992px) {
+  .ckeditor .info_icon_list h3 {
+    font-size: 2.125rem;
+  }
+  .ckeditor .info_icon_list ul li p {
+    font-size: 1.25rem;
+  }
+  .ckeditor .info_icon_list a.contact_link {
+    padding: 15px;
+    font-size: 1.375rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .ckeditor .info_icon_list ul li p {
+    font-size: 1.125rem;
+  }
+}
+.ckeditor .grid_icon_list h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1F3082;
+  margin-bottom: 24px;
+}
+.ckeditor .grid_icon_list ul {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.ckeditor .grid_icon_list ul li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.ckeditor .grid_icon_list ul li p {
+  font-size: 1.375rem;
+  color: #1F3082;
+  display: inline;
+}
+.ckeditor .grid_icon_list ul li::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin-right: 6px;
+  width: 9px;
+  height: 9px;
+  background-color: #1F3082;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media all and (max-width: 992px) {
+  .ckeditor .grid_icon_list ul h3 {
+    font-size: 2.125rem;
+  }
+  .ckeditor .grid_icon_list ul li p {
+    font-size: 1.125rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .ckeditor .grid_icon_list ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media all and (max-width: 576px) {
+  .ckeditor .grid_icon_list ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,4 @@
+/* 後台編輯器 控制按鈕 */
+.ckeditor .control-btnGroup {
+  display: none;
+}
